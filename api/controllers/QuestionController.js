@@ -19,29 +19,15 @@ module.exports = {
     
  command: function(req, res) {
     
+    Question.subscribe( req.socket );
+
     Question.find().exec(function (err, question) {
     		
-    		console.log(question);
     		if (err) return res.send(err,500);
-    		
 
-        //res.send('<p>some html</p>'+question[0].answer);
-        
+            res.view({'question': question});
 
-       res.view({'question': question});
-
-/*
-<% _.each(corndogs, function (corndog) { %>
-    <li><%= corndog.name %></li>
-    <% }) %>
-
-*/
-
-        //res.json(question);
-    });
-    
-    
-
+        });
   },  
 
 

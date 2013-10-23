@@ -36,22 +36,17 @@
   </head>
 
   <body>
-    <% include nav.ejs %>
-
-    <!-- Include the view file for the current controller/route -->
-    <%- body %>
-
-    <% include footer.ejs %>
-    <!--
+     <!--
 
       Client-side Javascript
       ========================
 
       You can import any js files in your `assets` directory as you would 
       normally: using <script></script> tags.
-
+      
       Here's an example of importing a few dependencies, in order:
     -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
     <!-- Bring in the socket.io client -->
     <script type="text/javascript" src="/js/socket.io.js"></script>
     <!-- then beef it up with some convenience logic for talking to Sails.js -->
@@ -77,6 +72,14 @@
       to use them.
 
     -->
+    
+    <% include nav.ejs %>
+
+    <!-- Include the view file for the current controller/route -->
+    <%- body %>
+
+    <% include footer.ejs %>
+
 
 
 

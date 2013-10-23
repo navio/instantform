@@ -1,12 +1,51 @@
  <div class="jumbotron">
+   
       <div class="container">
-        <h1>Hello, world!</h1>
+        <h1>Add Questions</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-       <ul>
-    <% _.each(question, function (q) { %>
-    <li><%= q.question %> - <%= q.answer %></li>
-    <% }) %>
-  </ul> 
+        <p><a id="dala" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+       <ul id="original">
+          <% _.each(question, function (q) { %>
+          <li><%= q.question %> - <%= q.answer %></li>
+          <% }) %>
+        </ul> 
+        <ul id="byjs" >
+        </ul>
 	</div>
-    </div>
+</div>
+<script>
+
+
+socket.get('/question', function (questions) {
+
+  console.log('tellme', questions);
+  $('#original').hide();
+  var element = "";
+  $.each(questions,function(key,value){ 
+
+      //console.log('daa:'+value.answer);
+      element += '<li id="li'+value.id+'">js::'+value.question+" - "+value.answer+'</li>'
+    });
+  $('#byjs').html(element);
+
+   socket.on('message', function(message){
+                        if(message.verb == "create"){
+                          console.log('create!')
+                          $('#byjs').append('<li id="li'+message.id+'">socket::'+message.data.question+" - "+message.data.answer+'</li>')
+
+                        }
+                        if(message.verb == "destroy"){
+                          console.log('deleted!')
+                          $('#li'+message.id).hide();
+
+                        }
+
+                });
+
+});
+
+
+
+
+</script>

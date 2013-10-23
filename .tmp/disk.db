@@ -1,0 +1,186 @@
+{
+  "data": {
+    "questions": [
+      {
+        "question": "como te llamas",
+        "answer": "jar",
+        "createdAt": "2013-10-23T05:14:37.146Z",
+        "updatedAt": "2013-10-23T05:14:37.146Z",
+        "id": 1
+      },
+      {
+        "question": "como te llamas",
+        "answer": "jar",
+        "createdAt": "2013-10-23T05:14:54.647Z",
+        "updatedAt": "2013-10-23T05:14:54.647Z",
+        "id": 2
+      }
+    ],
+    "questionare": [],
+    "question": [
+      {
+        "question": "dom",
+        "answer": "john",
+        "createdAt": "2013-10-22T01:47:54.564Z",
+        "updatedAt": "2013-10-22T01:47:54.564Z",
+        "id": 2
+      },
+      {
+        "question": "What is your name",
+        "answer": "I don't know",
+        "createdAt": "2013-10-23T02:22:14.733Z",
+        "updatedAt": "2013-10-23T02:22:14.733Z",
+        "id": 5
+      },
+      {
+        "question": "como te llamas",
+        "answer": "jaimelin",
+        "createdAt": "2013-10-23T05:12:02.838Z",
+        "updatedAt": "2013-10-23T05:12:02.838Z",
+        "id": 9
+      },
+      {
+        "question": "como te llamas",
+        "answer": "jar",
+        "createdAt": "2013-10-23T05:13:17.238Z",
+        "updatedAt": "2013-10-23T05:13:17.238Z",
+        "id": 10
+      },
+      {
+        "question": "como te llamas",
+        "answer": "jar",
+        "createdAt": "2013-10-23T05:15:10.862Z",
+        "updatedAt": "2013-10-23T05:15:10.862Z",
+        "id": 11
+      },
+      {
+        "question": "como te llamas",
+        "answer": "jaddr",
+        "createdAt": "2013-10-23T05:16:02.540Z",
+        "updatedAt": "2013-10-23T05:16:02.540Z",
+        "id": 12
+      },
+      {
+        "question": "como te llamas",
+        "answer": "Jamboo",
+        "createdAt": "2013-10-23T05:19:41.686Z",
+        "updatedAt": "2013-10-23T05:19:41.686Z",
+        "id": 13
+      },
+      {
+        "question": "como te llamas",
+        "answer": "Raul",
+        "createdAt": "2013-10-23T05:21:01.758Z",
+        "updatedAt": "2013-10-23T05:21:01.758Z",
+        "id": 14
+      },
+      {
+        "question": "como te llamas",
+        "answer": "Roberto",
+        "createdAt": "2013-10-23T05:21:19.167Z",
+        "updatedAt": "2013-10-23T05:21:19.167Z",
+        "id": 15
+      }
+    ],
+    "pregunta": [],
+    "preguntas": []
+  },
+  "schema": {
+    "questions": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    },
+    "questionare": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    },
+    "question": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    },
+    "pregunta": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    },
+    "preguntas": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    }
+  },
+  "counters": {
+    "questions": {
+      "id": 2
+    },
+    "questionare": {},
+    "question": {
+      "id": 15
+    },
+    "pregunta": {},
+    "preguntas": {}
+  }
+}
